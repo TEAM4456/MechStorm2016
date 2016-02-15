@@ -54,10 +54,10 @@ public class Arm extends Subsystem {
     	lowerArm.set(-.05);
     }
     public void secondFor() {
-    	upperArm.set(.05);
+    	upperArm.set(1);
     }
     public void secondBack() {
-    	upperArm.set(-.05);
+    	upperArm.set(-1);
     }
     public void stoparm()	{
     	upperArm.set(0);
