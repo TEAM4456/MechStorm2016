@@ -49,14 +49,14 @@ public class Shooter extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void speedmotors()	{
-    	rightShooter.set(-1);
+    	rightShooter.set(1);
     	leftShooter.set(-1);
     }
     public void plunger()	{
-    	shootPlunger.set(.1);
+    	shootPlunger.set(1);
     }
     public void intake()	{
-    	rightShooter.set(.1);
+    	rightShooter.set(-.1);
     	leftShooter.set(.1);
     }
     public void stopplunger()	{
