@@ -29,7 +29,7 @@ public class RobotMap {
     public static CANTalon driveleftDrive;
     public static CANTalon driverightDrive;
     public static RobotDrive driveRobotDrive21;
-    public static CANTalon armlowerArm;
+    public static CANTalon armsingleArm;
     public static CANTalon armupperArm;
     public static CANTalon intakeintakeMotor;
     public static CANTalon shooterrightShooter;
@@ -54,8 +54,8 @@ public class RobotMap {
         driveRobotDrive21.setSensitivity(0.5);
         driveRobotDrive21.setMaxOutput(1.0);
 
-        armlowerArm = new CANTalon(8);
-        LiveWindow.addActuator("Arm", "lowerArm", armlowerArm);
+        armsingleArm = new CANTalon(8);
+        LiveWindow.addActuator("Arm", "singleArm", armsingleArm);
         
         armupperArm = new CANTalon(9);
         LiveWindow.addActuator("Arm", "upperArm", armupperArm);
