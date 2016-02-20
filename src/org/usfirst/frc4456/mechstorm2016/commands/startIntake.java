@@ -9,11 +9,10 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4456.mechstorm2016.commands;
-
-import org.usfirst.frc4456.mechstorm2016.Robot;
+package org.usfirst.frc4456.TeleopTesting.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import org.usfirst.frc4456.TeleopTesting.Robot;
 
 /**
  *
@@ -49,12 +48,13 @@ public class startIntake extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isTimedOut();
+        return false;
     }
 
     // Called once after isFinished returns true
     protected void end() {
     	Robot.shooter.stopshooter();
+    	Robot.intake.stopIntake();
     }
 
     // Called when another command which requires one or more of the same
