@@ -9,10 +9,10 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4456.TeleopTesting.commands;
+package org.usfirst.frc4456.mechstorm2016.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc4456.TeleopTesting.Robot;
+import org.usfirst.frc4456.mechstorm2016.Robot;
 
 /**
  *

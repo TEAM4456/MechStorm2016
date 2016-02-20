@@ -9,16 +9,16 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4456.TeleopTesting;
+package org.usfirst.frc4456.mechstorm2016;
 
-import org.usfirst.frc4456.TeleopTesting.Robot;
-import org.usfirst.frc4456.TeleopTesting.commands.*;
+import org.usfirst.frc4456.mechstorm2016.Robot;
+import org.usfirst.frc4456.mechstorm2016.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import org.usfirst.frc4456.TeleopTesting.subsystems.*;
+import org.usfirst.frc4456.mechstorm2016.subsystems.*;
 
 
 /**

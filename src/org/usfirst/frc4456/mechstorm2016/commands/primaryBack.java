@@ -9,14 +9,14 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4456.TeleopTesting.commands;
+package org.usfirst.frc4456.mechstorm2016.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc4456.TeleopTesting.Robot;
-import org.usfirst.frc4456.TeleopTesting.RobotMap;
-import org.usfirst.frc4456.TeleopTesting.subsystems.*;
+import org.usfirst.frc4456.mechstorm2016.Robot;
+import org.usfirst.frc4456.mechstorm2016.RobotMap;
+import org.usfirst.frc4456.mechstorm2016.subsystems.*;
 
 /**
  *
