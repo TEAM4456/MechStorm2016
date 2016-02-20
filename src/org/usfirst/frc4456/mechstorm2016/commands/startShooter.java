@@ -11,9 +11,8 @@
 
 package org.usfirst.frc4456.mechstorm2016.commands;
 
-import org.usfirst.frc4456.mechstorm2016.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
+import org.usfirst.frc4456.mechstorm2016.Robot;
 
 /**
  *

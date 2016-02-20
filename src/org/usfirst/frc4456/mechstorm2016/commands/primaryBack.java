@@ -11,9 +11,12 @@
 
 package org.usfirst.frc4456.mechstorm2016.commands;
 
-import org.usfirst.frc4456.mechstorm2016.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
+import org.usfirst.frc4456.mechstorm2016.Robot;
+import org.usfirst.frc4456.mechstorm2016.RobotMap;
+import org.usfirst.frc4456.mechstorm2016.subsystems.*;
 
 /**
  *
@@ -44,11 +47,25 @@ public class primaryBack extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	//Robot.arm.arm();
+    	System.out.println("getOutputCurrent(): " + RobotMap.armsingleArm.getOutputCurrent());
+    	System.out.println("getPosition(): " + RobotMap.armsingleArm.getPosition());
+    	System.out.println("getSpeed(): " + RobotMap.armsingleArm.getSpeed());
+      	System.out.println("get(): " + RobotMap.armsingleArm.get());
+      	System.out.println("Enc(): " + RobotMap.armsingleArm.getEncPosition());
+      	System.out.println("Analog(): " + RobotMap.armsingleArm.getAnalogInPosition());
+      	
+      	System.out.println("RobotMap.armsingleArm:" + RobotMap.armsingleArm.toString());
+      
+      	
+        SmartDashboard.putNumber("Position", RobotMap.armsingleArm.getPosition());
+		SmartDashboard.putNumber("Current", RobotMap.armsingleArm.getOutputCurrent());
+		SmartDashboard.putNumber("Speed", RobotMap.armsingleArm.getSpeed());
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return isTimedOut();
     }
 
     // Called once after isFinished returns true
