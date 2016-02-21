@@ -87,7 +87,7 @@ public class OI {
         bButton = new JoystickButton(joystick, 2);
         bButton.whileHeld(new primaryBack());
         yButton = new JoystickButton(joystick, 4);
-        yButton.whileHeld(new primaryForward());
+        yButton.whileHeld(new MOVEARM());
         rightBumper = new JoystickButton(joystick, 6);
         rightBumper.toggleWhenPressed(new startShooter());
         leftBumper = new JoystickButton(joystick, 5);
@@ -139,7 +139,7 @@ public class OI {
     	SmartDashboard.putBoolean("Enabled", robot.isEnabled());
     	
     	//robot.pidController = (PIDController) SmartDashboard.getData("talonPID");    	
-    	CANTalon singlArm = this.robot.arm.getSingleArm();
+    	//CANTalon singlArm = this.robot.arm.getSingleArm();
        	//singleArm.changeControlMode(CANTalon.TalonControlMode.Position);
 		//System.out.println("stopArm.singleArm.getPosition():" + singleArm.getPosition());
 		//System.out.println("OI.singleArm.getDeviceId():" + singleArm.getDeviceID());
