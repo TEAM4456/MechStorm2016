@@ -54,7 +54,8 @@ public class teleopDrive extends Command {
     	Robot.drive.driver(Robot.oi.joystick);
     	
     	//RobotMap.armsingleArm.changeControlMode(TalonControlMode.Position);
-        	
+        
+    	//SmartDashboard.putNumber("Position", RobotMap.armsingleArm.getPosition());
        	/*System.out.println("telopDrive.getOutputCurrent(): " + RobotMap.armsingleArm.getOutputCurrent());
     	System.out.println("telopDrive.getPosition(): " + RobotMap.armsingleArm.getPosition());
     	System.out.println("telopDrive.getSpeed(): " + RobotMap.armsingleArm.getSpeed());
