@@ -1,5 +1,7 @@
 package org.usfirst.frc4456.mechstorm2016.commands;
 
+import org.usfirst.frc4456.mechstorm2016.Robot;
+import org.usfirst.frc4456.mechstorm2016.subsystems.*;
 import org.usfirst.frc4456.mechstorm2016.RobotMap;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -16,7 +18,7 @@ public class MOVEARM extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.armsingleArm.set(.5);
+    	Robot.arm.moveNextTargetPosition();
     }
 
     // Called repeatedly when this Command is scheduled to run

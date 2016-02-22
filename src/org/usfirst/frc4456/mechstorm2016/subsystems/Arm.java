@@ -96,7 +96,7 @@ public class Arm extends Subsystem {
 	    setIndex(ARM_POSITIONS[currentTargetIndex]);
 	}
 	
-	public void setIndex(double armPositions)
+/*	public void setIndex(double armPositions)
 	{
 		RobotMap.armsingleArm.set(200);
 		}
@@ -106,6 +106,12 @@ public class Arm extends Subsystem {
     {
     	System.out.println(singleArm.getEncPosition());
     }
+*/
+
+		private void setIndex(double d) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 		@Override
