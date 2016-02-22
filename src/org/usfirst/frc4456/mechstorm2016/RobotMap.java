@@ -61,7 +61,7 @@ public class RobotMap {
         armsingleArm.setFeedbackDevice(FeedbackDevice.QuadEncoder);
         
         LiveWindow.addActuator("Arm", "singleArm", armsingleArm);
-       // armsingleEnc = new Encoder(armsingleArm.setFeedbackDevice(device););
+        LiveWindow.addSensor("Arm", "armencoder", RobotMap.armsingleArm);
         
         intakeMotor = new CANTalon(8);
         LiveWindow.addActuator("Intake", "intakeMotor", intakeMotor);
