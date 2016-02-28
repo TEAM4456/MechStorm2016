@@ -111,7 +111,7 @@ public class Arm extends Subsystem {
 	}
 	
 	public void armAxis(){
-		singleArm.set(getAxisTriggers()*0.5);
+		singleArm.set(getAxisTriggers());
 	}
     
 	public void setarm(double power) {

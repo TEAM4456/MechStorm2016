@@ -56,7 +56,8 @@ public class Drive extends Subsystem {
     	robotDrive21.arcadeDrive(stick);
     }
     public void setspeed(double vbus)	{
-    	robotDrive21.tankDrive(vbus, vbus);
+    	robotDrive21.setSafetyEnabled(false);
+    	robotDrive21.tankDrive(-vbus, -vbus);
     }
     public void spinright(double vbus)	{
     	robotDrive21.tankDrive(vbus, -vbus);
