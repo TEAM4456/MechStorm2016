@@ -49,7 +49,7 @@ public class Intake extends Subsystem {
     public void startIntake()	{
     	intakeMotor.set(1);
     }
-    public void stopIntake(){
+    public void stopIntake() {
     	intakeMotor.set(0);
     }
 }
